@@ -1,7 +1,7 @@
 <?php
 require "config.php";
 try {
-    $connection = new PDO("mysql:host=$host", $username, $password,
+    $connection = new PDO("mysql:host=$host", $username = "root", $password = "Bagels12",
     $options);
     $sql = file_get_contents("data/init.sql");
     $connection->exec($sql);
